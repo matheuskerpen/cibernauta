@@ -40,7 +40,7 @@ template {
   display: none;
 }
 a {
-  background-color: #000000;
+  background-color: transp#arent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
@@ -229,13 +229,12 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: #221d1d;
+  color: #fff;
   font-family: 'Ubuntu';
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 56px;
-  font-size: 3.15rem;
-  line-height: 1.1;
+  font-size: 64px;
+  line-height: 74px;
 }
 h2 {
   margin-left: 0;
@@ -246,13 +245,12 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #CFD8DC;
   font-family: Ubuntu;
   font-weight: lighter;
   text-rendering: optimizeLegibility;
   font-size: 30px;
-  font-size: 1.67rem;
-  line-height: 1.1;
+  line-height: 34px;
 }
 h3 {
   margin-left: 0;
@@ -263,12 +261,12 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #fff;
   font-family: Ubuntu;
-  font-weight: bold;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
+  font-size: 30px;
+  line-height: 34px;
 }
 h4 {
   margin-left: 0;
@@ -279,12 +277,12 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #fff;
   font-family: 'Ubuntu';
-  font-weight: bold;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 28px;
 }
 h5 {
   margin-left: 0;

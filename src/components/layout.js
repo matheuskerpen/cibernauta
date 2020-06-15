@@ -29,7 +29,6 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1200,
           padding: `0 120px`,
           background: `linear-gradient(180deg, #1A151F 56.77%, #37333A 100%)`
         }}
