@@ -1,15 +1,10 @@
 import React from 'react'
 
+import "./footer.css"
+
 export default function Footer() {
     return (
-    <footer style={{
-        width: `100%`,
-        height: `60px`,
-        position: `absolute`,
-        backgroundColor: `#1A151F`,
-        display: `block`,
-        textAlign: `center`
-    }}>
+    <footer>
         © {new Date().getFullYear()}, cibernauta
     </footer>
     )
