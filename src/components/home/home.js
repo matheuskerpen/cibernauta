@@ -1,23 +1,38 @@
 import React from "react"
 
+import { Container, Row, Col, Image, Button} from "react-bootstrap"
+
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./home.css"
 
-const Home = () => (
-  <div
-    style={{
-      margin: `0 auto`,
-      padding: `0 120px`,
-      background: `linear-gradient(180deg, #1A151F 56.77%, #37333A 100%)`
-    }}
-  >
-    <div style={{ maxWidth: `720px` }}>
-      <h1>É HORA DE DAR VIDA AO SEU PROJETO</h1>
-      <h2>Desenvolvemos produtos digitais utilizando as melhores tecnologias do mercado</h2>
-      <h3>Entenda como podemos ajudar você</h3>
-      <h4>UX Planning</h4>
-    </div>
+import homeImage from "../../images/home-image.png"
 
+const Home = () => (
+  <div>
+    <Container>
+      <Row>
+        <Col xs={12} sm={12} md={7} lg={7}>
+          <div style={{margin: `4em 0em`}}>
+            <h1 style={{paddingBottom: `.2em`}}>É HORA DE DAR VIDA AO SEU PROJETO</h1>
+            <h2 style={{paddingBottom: `1.2em`}}>Desenvolvemos produtos digitais utilizando as melhores tecnologias do mercado</h2>
+            <Button variant="danger" style={{
+              padding: '12px 16px', 
+              fontFamily: 'Ubuntu',
+              fontStyle: 'normal',
+              fontWeight: 'bold',
+              fontSize: '12px'
+              }}>
+                Entre em contato
+              </Button>
+          </div>
+        </Col>
+        <Col xs={12} sm={12} md={5} lg={5}>
+          <Image src={homeImage} alt="home-image" fluid style={{margin: `1em 0em`}}/>
+        </Col> 
+      </Row>
+    </Container>
   </div>
+  
 )
 
 export default Home

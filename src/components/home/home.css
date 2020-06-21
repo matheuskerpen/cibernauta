@@ -34,9 +34,9 @@ h1 {
   font-family: 'Ubuntu';
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 64px;
-  line-height: 74px;
+  font-size: 3em;
 }
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -47,12 +47,12 @@ h2 {
   padding-top: 0;
   margin-bottom: 0;
   color: #CFD8DC;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-weight: lighter;
   text-rendering: optimizeLegibility;
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 1.7em;
 }
+
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -73,7 +73,7 @@ h4 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 16px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -82,7 +82,7 @@ h4 {
   font-family: 'Ubuntu';
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
 }
 h5 {
@@ -118,10 +118,11 @@ h6 {
   line-height: 1.1;
 }
 p {
+  color: #BBBFC1;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 8px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
