@@ -9,7 +9,7 @@ import homeImage from "../../images/home-image.png"
 
 const Home = () => (
   <div>
-    <Container>
+    <Container style={{  display: `flex`, width: '80%', maxWidth: '1200px'}}>
       <Row>
         <Col xs={12} sm={12} md={7} lg={7}>
           <div style={{margin: `4em 0em`}}>

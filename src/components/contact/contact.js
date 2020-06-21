@@ -2,9 +2,11 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 
 const Contact = () => (
-    <Container style={{background: '#fff'}}>
-        heeeeeeuy
-    </Container>
+    <div style={{background: '#fff', width: '100%'}}>
+        <Container style={{ width: '80%', maxWidth: '1200px'}}>
+            heeeeeeuy
+        </Container>
+    </div>
 )
 
 export default Contact
