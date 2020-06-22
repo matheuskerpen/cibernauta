@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import "./header.css"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import {Container, Image, Row, Col} from "react-bootstrap"
+import {Container, Image} from "react-bootstrap"
 import darkBlueLogo from "../../images/logo/dark-blue.png"
 
 const StyledAnchor = styled(AnchorLink)`

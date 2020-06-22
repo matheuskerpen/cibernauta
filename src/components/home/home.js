@@ -28,7 +28,7 @@ const Home = () => (
         </Col>
         <Col className="d-none d-md-block" md={5} lg={5} >
           <Image src={homeImage} alt="home-image" fluid style={{margin: `1em 0em`}}/>
-          <a className="float-right" href="https://absurd.design" target="_blank">absur.design</a>
+          <a className="float-right" href="https://absurd.design" target="_blank" rel="noreferrer">absur.design</a>
         </Col> 
       </Row>
     </Container>
