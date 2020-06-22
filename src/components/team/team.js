@@ -5,7 +5,7 @@ import FrancescoFerraro from "../../images/francesco-ferraro.jpg"
 import MatheusKerpen from "../../images/matheus-kerpen.png"
 
 const Team = () => (
-    <Container style={{ width: '80%', maxWidth: '1200px', textAlign: 'center', marginTop: '32px', paddingBottom: '56px'}}>
+    <Container id="team" style={{ width: '80%', maxWidth: '1200px', textAlign: 'center', marginTop: '32px', paddingBottom: '56px'}}>
         <h3>Quem somos</h3>
         <Row style={{  display: `flex`, marginTop: '32px', alignItems: 'center' }}>
             <Col lg={6}>

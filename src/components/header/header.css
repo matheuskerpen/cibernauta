@@ -9,12 +9,5 @@ header {
 li {
   margin-left: 16px;
   margin-right: 16px;
-  font-family: 'Ubuntu';
-  color: #ffffff;
-  font-size: 16px;
   line-height: 32px;
-}
-
-li:hover {
-  font-weight: bold;
 }
