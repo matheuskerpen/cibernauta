@@ -4,6 +4,7 @@ module.exports = {
     description: `cibernauta web page.`,
     author: `@cibernauta`,
   },
+  pathPrefix: "/cibernauta",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -38,9 +39,16 @@ module.exports = {
       options: {
         "ssr": false
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `ubuntu\:Light,Regular,Medium,Bold`,
+          `montserrat`
+        ],
+        display: 'swap'
+      }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
