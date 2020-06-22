@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import { DropdownButton, Nav } from "react-bootstrap"
-
 const StyledAnchor = styled(AnchorLink)`
   color: #fff;
   font-size: 16px;
@@ -37,9 +35,18 @@ const MenuIcon = styled.button`
         border-radius: 5px;
         transform-origin: 1px;
         background: #fff;
+        transition: opacity 300ms, tranform: rotate 300ms;
 
         :first-child {
             transform: ${({nav}) => nav ? 'rotate(45deg)' : 'rotate(0)'}
+        }
+
+        :nth-child(2) {
+            opacity: ${({nav}) => nav ? '0' : '1'}
+        }
+
+        :nth-child(3) {
+            transform: ${({nav}) => nav ? 'rotate(-45deg)' : 'rotate(0)'}
         }
     }
 `
@@ -50,7 +57,7 @@ const MenuList = styled.nav`
     text-align: center;
     padding: 24px;
     background: rgba(40, 35, 45, 0.95);
-    height: 100vh;
+    height: 200px;
     width: 100%;
     position: absolute;
     top: 64;
@@ -72,7 +79,7 @@ const MobileMenu = () => {
 
     return (
         <div>
-            <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
+            <MenuIcon className="d-md-none" nav={nav} onClick={() => showNav(!nav)}>
                 <div></div>
                 <div></div>
                 <div></div>
