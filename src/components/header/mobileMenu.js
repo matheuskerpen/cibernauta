@@ -72,8 +72,6 @@ const MenuList = styled.nav`
     }
 `
 
-
-
 const MobileMenu = () => {
     const [nav, showNav] = useState(false)
 
@@ -86,10 +84,10 @@ const MobileMenu = () => {
             </MenuIcon>
             <MenuList nav={nav}>
                 <ul>
-                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#home" title="home" stripHash/></li>
-                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#services" title="serviços" stripHash/></li>
-                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#contact" title="contato" stripHash/></li>
-                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#team" title="equipe" stripHash/></li>
+                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#home" title="home"/></li>
+                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#services" title="serviços"/></li>
+                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#contact" title="contato"/></li>
+                    <li onClick={() => showNav(!nav)}><StyledAnchor to="/#team" title="equipe"/></li>
                 </ul>
             </MenuList>
         </div>
