@@ -40,24 +40,24 @@ const Contact = () => {
             <Form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
                 <Row>
-                    <Col>
+                    <Col lg={6}>
                     <Form.Group>
                             <Form.Label>Nome</Form.Label>
-                            <Form.Control id="name" type="text" name="name" required={true} onChange={handleChange} value={formState.name} placeholder="Nome"></Form.Control>
+                            <Form.Control id="name" type="text" name="name" required={true} onChange={handleChange} value={formState.name} placeholder="Como você gosta de ser chamado?"></Form.Control>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>Email</Form.Label>
-                            <Form.Control id="email" type="email" name="email" required={true} onChange={handleChange} value={formState.email} placeholder="Email"></Form.Control>
+                            <Form.Control id="email" type="email" name="email" required={true} onChange={handleChange} value={formState.email} placeholder="Informe o email que você mais acessa"></Form.Control>
                         </Form.Group>
                         <Form.Group>
                             <Form.Label>Telefone</Form.Label>
-                            <Form.Control id="phone" type="phone" name="phone" required={false} onChange={handleChange} value={formState.phone} placeholder="Telefone"></Form.Control>
+                            <Form.Control id="phone" type="phone" name="phone" required={false} onChange={handleChange} value={formState.phone} placeholder="Prefere falar por telefone?"></Form.Control>
                         </Form.Group>
                     </Col>
-                    <Col>
+                    <Col lg={6}>
                         <Form.Group>
                             <Form.Label>Mensagem</Form.Label>
-                            <Form.Control as="textarea" rows="8" id="message" type="text" name="message" required={true} onChange={handleChange} value={formState.message} placeholder="Mensagem"></Form.Control>
+                            <Form.Control as="textarea" rows="8" id="message" type="text" name="message" required={true} onChange={handleChange} value={formState.message} placeholder="Fale um pouco sobre o seu projeto. Como podemos te ajudar?"></Form.Control>
                         </Form.Group>
                         <Button variant="danger" className="float-right" type="submit">Submit</Button>
                     </Col>
