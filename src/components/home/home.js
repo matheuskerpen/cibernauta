@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Container, Row, Col, Image, Button} from "react-bootstrap"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./home.css"
@@ -15,15 +16,17 @@ const Home = () => (
           <div style={{margin: `4em 0em`}}>
             <h1 style={{paddingBottom: `.2em`}}>É HORA DE DAR VIDA AO SEU PROJETO</h1>
             <h2 style={{paddingBottom: `1.2em`}}>Desenvolvemos produtos digitais utilizando as melhores tecnologias do mercado</h2>
-            <Button variant="danger" style={{
-              padding: '12px 16px', 
-              fontFamily: 'Ubuntu',
-              fontStyle: 'normal',
-              fontWeight: 'bold',
-              fontSize: '12px'
-              }}>
-                <a href="/#contact" title="">Entre em contato</a>
-              </Button>
+            <AnchorLink to="/#contact" title="">
+                <Button variant="danger" style={{
+                padding: '12px 16px', 
+                fontFamily: 'Ubuntu',
+                fontStyle: 'normal',
+                fontWeight: 'bold',
+                fontSize: '12px'
+                }}>
+                  Entre em contato
+                </Button>
+              </AnchorLink>
           </div>
         </Col>
         <Col className="d-none d-md-block" md={5} lg={5} >
