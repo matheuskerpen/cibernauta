@@ -49,6 +49,7 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    `gastsby-plugin-netlify-cms`
   ],
 }
