@@ -22,7 +22,7 @@ const Home = () => (
               fontWeight: 'bold',
               fontSize: '12px'
               }}>
-                Entre em contato
+                <a href="/#contact" title="">Entre em contato</a>
               </Button>
           </div>
         </Col>
