@@ -63,7 +63,7 @@ const MenuList = styled.nav`
     top: 64;
     right: 0;
     transition: transform 300ms;
-    transform: ${({nav}) => nav ? "translateX(0)" : "translateX(100%)"};
+    transform: ${({nav}) => nav ? "translateX(0)" : "translateX(-100%)"};
 
     ul {
         list-style: none;
