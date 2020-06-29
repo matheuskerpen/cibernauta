@@ -10,9 +10,11 @@ import "./services.css"
          <Row>
              <Col lg={6}>
                 <div className="service-card">
-                    <h4>UX Planning</h4>
-                    <p>Dinâmica para definição de objetivos, pesquisa, concepção, design e teste.</p>
-                    <p>Utilizamos uma metodologia inspirada no Design Sprint e adaptada para a necessidade de cada cliente.</p>
+                    <h4>Presença digital</h4>
+                    <p>Sua empresa ainda não tem um site ou precisa de uma atualização?</p>
+                    <p>Nós usamos um stack moderno, com gerenciador de conteúdo (CMS), rankeamento otimizado
+                         no google e nenhum custo de hospedagem.</p>
+                    <p>Com um pequeno investimento, você apresenta sua empresa de forma profissional na internet.</p>
                     <AnchorLink to="/#contact" title="">
                         <Button className="float-right" variant="outline-danger" style={{
                                 marginTop: '8px',
@@ -26,7 +28,7 @@ import "./services.css"
                     </AnchorLink>
                 </div>
                 <div className="service-card">
-                    <h4>Consultoria</h4>
+                    <h4>Produto digital</h4>
                     <p>Tem dúvidas em relação a complexidade de criar um produto digital? Precisa de ajuda para reavaliar o seu produto?</p>
                     <p>Podemos contribuir compartilhando nosso conhecimento e ajudando na tomada de decisões estratégicas.</p>
                     <AnchorLink to="/#contact" title="">
@@ -44,11 +46,9 @@ import "./services.css"
              </Col>
              <Col lg={6}>
                 <div className="service-card">
-                    <h4>Presença digital</h4>
-                    <p>Sua empresa ainda não tem um site ou precisa de uma atualização?</p>
-                    <p>Nós usamos um stack moderno, com gerenciador de conteúdo, rankeamento otimizado
-                         no google e nenhum custo de hospedagem.</p>
-                    <p>Com um pequeno investimento, você apresenta sua empresa de forma profissional na internet.</p>
+                    <h4>UX Planning</h4>
+                    <p>Dinâmica para definição de objetivos, pesquisa, concepção, design e teste.</p>
+                    <p>Utilizamos uma metodologia inspirada no Design Sprint e adaptada para a necessidade de cada cliente.</p>
                     <AnchorLink to="/#contact" title="">
                         <Button className="float-right" variant="outline-danger" style={{
                                 marginTop: '8px',
@@ -62,7 +62,7 @@ import "./services.css"
                     </AnchorLink>
                 </div>
                 <div className="service-card">
-                    <h4>Produto digital</h4>
+                    <h4>Consultoria</h4>
                     <p>Tem dúvidas em relação a complexidade de criar um produto digital? Precisa de ajuda para reavaliar o seu produto?</p>
                     <p>Podemos contribuir compartilhando nosso conhecimento e ajudando na tomada de decisões estratégicas.</p>
                     <AnchorLink to="/#contact" title="">
