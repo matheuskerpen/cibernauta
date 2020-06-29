@@ -50,6 +50,6 @@ module.exports = {
         display: 'swap'
       }
     },
-    `gastsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`
   ],
 }
