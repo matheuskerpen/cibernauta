@@ -71,7 +71,6 @@ const Contact = () => {
                         
                         <PhoneInput
                             id="phone" 
-                            type="text"
                             name="phone"
                             label="Telefone" 
                             variant="outlined"
