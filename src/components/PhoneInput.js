@@ -2,7 +2,7 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField'
 import NumberFormat from 'react-number-format';
 
-const PhoneInput = ( { label, placeholder, variant, required, id, name, onChange, value } ) => {
+const PhoneInput = ( { label, placeholder, variant, required, id, name, onChange, value, style } ) => {
     return(
         <NumberFormat
             format={"(##) #### #####"}
@@ -16,14 +16,7 @@ const PhoneInput = ( { label, placeholder, variant, required, id, name, onChange
             name={name}
             onChange={onChange}
             value={value}
-            // InputProps={{}}
-            // onClick={onClick}
-            // allowLeadingZeros={true}
-            // helperText={"helper text"}
-            // isNumericString={false}
-            // value={props.value}
-            // onValueChange={props.onValueChange}
-            // {...props}
+            style={style}
         />
     )
 }
