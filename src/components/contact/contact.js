@@ -1,6 +1,7 @@
 import React, { useState }   from 'react'
 import { Container, Form, Row, Col, Button } from 'react-bootstrap'
-import NumberFormat from 'react-number-format';
+import PhoneInput from '../PhoneInput'
+import NumberFormat from 'react-number-format'
 
 const Contact = () => {
 
@@ -67,19 +68,31 @@ const Contact = () => {
                                 placeholder="Informe seu email">
                             </Form.Control>
                         </Form.Group>
-                        <Form.Group style={{display: 'block'}}>
+                        
+                        <PhoneInput
+                            id="phone" 
+                            type="text"
+                            name="phone"
+                            label="Telefone" 
+                            variant="outlined"
+                            required={false}
+                            onChange={handleChange}
+                            value={formState.phone} 
+                            placeholder="(  )"
+                        />
+
+                        {/* <Form.Group style={{display: 'block'}}>
                             <Form.Label>Telefone</Form.Label>
-                            {/* <NumberFormat format="(##) #### #####"></NumberFormat> */}
                             <Form.Control 
                                 id="phone" 
-                                type="text" 
+                                type="text"
                                 name="phone"
                                 required={false} 
                                 onChange={handleChange} 
                                 value={formState.phone} 
                                 placeholder="Prefere falar por telefone?">
                             </Form.Control>
-                        </Form.Group>
+                        </Form.Group> */}
                     </Col>
                     <Col lg={6}>
                         <Form.Group>
@@ -104,15 +117,59 @@ const Contact = () => {
 
 export default Contact
 
-{/* <div id="contact" style={{background: '#fff', width: '100%'}}>
-<Container style={{ width: '80%', maxWidth: '1200px', height: '400px'}}>
-    <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="name">Name</label>
-        <input id="name" type="text" name="name" onChange={handleChange} value={formState.name} placeholder="Name"/>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="email" name="email" onChange={handleChange} value={formState.email} placeholder="Email"/>
-        <button type="submit">Submit</button>
-    </form>
-</Container>
-</div> */}
+{/* <Row>
+<Col lg={6}>
+<Form.Group>
+        <Form.Label>Nome</Form.Label>
+        <Form.Control 
+            id="name" 
+            type="text" 
+            name="name" 
+            required={true}
+            onChange={handleChange} 
+            value={formState.name} 
+            placeholder="Como gosta de ser chamado?">
+        </Form.Control>     
+    </Form.Group>
+    <Form.Group>
+        <Form.Label>Email</Form.Label>
+        <Form.Control 
+            id="email" 
+            type="email" 
+            name="email" 
+            required={true} 
+            onChange={handleChange} 
+            value={formState.email} 
+            placeholder="Informe seu email">
+        </Form.Control>
+    </Form.Group>
+    <Form.Group style={{display: 'block'}}>
+        <Form.Label>Telefone</Form.Label>
+        {/* <NumberFormat format="(##) #### #####"></NumberFormat> */}
+       {/* <Form.Control 
+            id="phone" 
+            type="text" 
+            name="phone"
+            required={false} 
+            onChange={handleChange} 
+            value={formState.phone} 
+            placeholder="Prefere falar por telefone?">
+        </Form.Control>
+    </Form.Group>
+</Col>
+<Col lg={6}>
+    <Form.Group>
+        <Form.Label>Mensagem</Form.Label>
+        <Form.Control 
+            as="textarea" 
+            rows="8" id="message" 
+            type="text" name="message" 
+            required={true} 
+            onChange={handleChange} 
+            value={formState.message} 
+            placeholder="Fale um pouco sobre o seu projeto. Como podemos te ajudar?">
+        </Form.Control>
+    </Form.Group>
+    <Button variant="danger" className="float-right" type="submit">Enviar</Button>
+</Col>
+</Row> */}

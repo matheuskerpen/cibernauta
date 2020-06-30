@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 const IndexPage = () => (
   <>
   <Header/>
-  <SEO title="Home" />
+  {/* <SEO title="Home" /> */}
   <Layout/>
   <Footer/>
  
