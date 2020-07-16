@@ -2,13 +2,14 @@ import React, { useState }   from 'react'
 import { Container, Form, Row, Col, Button } from 'react-bootstrap'
 import PhoneInput from '../PhoneInput'
 import TextField from '@material-ui/core/TextField'
-import NumberFormat from 'react-number-format'
 
 const Contact = () => {
 
     const [formState, setFormState] = useState({
         name: "",
-        email: ""
+        email: "",
+        phone: "",
+        message: ""
     })
 
     const encode = (data) => {
@@ -34,7 +35,12 @@ const Contact = () => {
             .catch(error => alert(error));
     
         e.preventDefault();
-        console.log(formState)
+        setFormState({
+                name: "",
+                email: "",
+                phone: "",
+                message: ""   
+        });
     }
 
     return (
@@ -57,19 +63,6 @@ const Contact = () => {
                             placeholder="Como gosta de ser chamado?"
                             style={{ paddingBottom: '24px'}} 
                         />
-                    {/* <Form.Group>
-                            <Form.Label>Nome</Form.Label>
-                            <Form.Control 
-                                id="name" 
-                                type="text" 
-                                name="name" 
-                                required={true}
-                                onChange={handleChange} 
-                                value={formState.name} 
-                                placeholder="Como gosta de ser chamado?">
-                            </Form.Control>     
-                        </Form.Group> */}
-
                         <TextField
                            id="email" 
                            name="email"
@@ -83,20 +76,6 @@ const Contact = () => {
                            variant="outlined"
                            style={{ paddingBottom: '24px'}} 
                         />
-
-                        {/* <Form.Group>
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control 
-                                id="email" 
-                                type="email" 
-                                name="email" 
-                                required={true} 
-                                onChange={handleChange} 
-                                value={formState.email} 
-                                placeholder="Informe seu email">
-                            </Form.Control>
-                        </Form.Group> */}
-                        
                         <PhoneInput
                             id="phone" 
                             name="phone"
@@ -108,22 +87,8 @@ const Contact = () => {
                             placeholder="(  )"
                             style={{ paddingBottom: '24px'}}
                         />
-
-                        {/* <Form.Group style={{display: 'block'}}>
-                            <Form.Label>Telefone</Form.Label>
-                            <Form.Control 
-                                id="phone" 
-                                type="text"
-                                name="phone"
-                                required={false} 
-                                onChange={handleChange} 
-                                value={formState.phone} 
-                                placeholder="Prefere falar por telefone?">
-                            </Form.Control>
-                        </Form.Group> */}
                     </Col>
                     <Col lg={6}>
-
                         <TextField
                             multiline
                             rows={6}
@@ -139,19 +104,6 @@ const Contact = () => {
                             placeholder="Como podemos te ajudar? Conte sobre o seu projeto"
                             style={{ paddingBottom: '24px'}}
                         />
-
-                        {/* <Form.Group>
-                            <Form.Label>Mensagem</Form.Label>
-                            <Form.Control 
-                                as="textarea" 
-                                rows="8" id="message" 
-                                type="text" name="message" 
-                                required={true} 
-                                onChange={handleChange} 
-                                value={formState.message} 
-                                placeholder="Fale um pouco sobre o seu projeto. Como podemos te ajudar?">
-                            </Form.Control>
-                        </Form.Group> */}
                         <Button variant="danger" className="float-right" type="submit">Enviar</Button>
                     </Col>
                 </Row>
@@ -161,60 +113,3 @@ const Contact = () => {
 )}
 
 export default Contact
-
-{/* <Row>
-<Col lg={6}>
-<Form.Group>
-        <Form.Label>Nome</Form.Label>
-        <Form.Control 
-            id="name" 
-            type="text" 
-            name="name" 
-            required={true}
-            onChange={handleChange} 
-            value={formState.name} 
-            placeholder="Como gosta de ser chamado?">
-        </Form.Control>     
-    </Form.Group>
-    <Form.Group>
-        <Form.Label>Email</Form.Label>
-        <Form.Control 
-            id="email" 
-            type="email" 
-            name="email" 
-            required={true} 
-            onChange={handleChange} 
-            value={formState.email} 
-            placeholder="Informe seu email">
-        </Form.Control>
-    </Form.Group>
-    <Form.Group style={{display: 'block'}}>
-        <Form.Label>Telefone</Form.Label>
-        {/* <NumberFormat format="(##) #### #####"></NumberFormat> */}
-       {/* <Form.Control 
-            id="phone" 
-            type="text" 
-            name="phone"
-            required={false} 
-            onChange={handleChange} 
-            value={formState.phone} 
-            placeholder="Prefere falar por telefone?">
-        </Form.Control>
-    </Form.Group>
-</Col>
-<Col lg={6}>
-    <Form.Group>
-        <Form.Label>Mensagem</Form.Label>
-        <Form.Control 
-            as="textarea" 
-            rows="8" id="message" 
-            type="text" name="message" 
-            required={true} 
-            onChange={handleChange} 
-            value={formState.message} 
-            placeholder="Fale um pouco sobre o seu projeto. Como podemos te ajudar?">
-        </Form.Control>
-    </Form.Group>
-    <Button variant="danger" className="float-right" type="submit">Enviar</Button>
-</Col>
-</Row> */}
