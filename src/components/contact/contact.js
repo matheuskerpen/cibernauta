@@ -104,7 +104,17 @@ const Contact = () => {
                             placeholder="Como podemos te ajudar? Conte sobre o seu projeto"
                             style={{ paddingBottom: '24px'}}
                         />
-                        <Button variant="danger" className="float-right" type="submit">Enviar</Button>
+                        <Button variant="danger" className="float-right" type="submit"
+                            style={{
+                                padding: '12px 16px', 
+                                fontFamily: 'Ubuntu',
+                                fontStyle: 'normal',
+                                fontWeight: 'bold',
+                                fontSize: '12px',
+                                minWidth: 100
+                            }}>
+                            Enviar
+                        </Button>
                     </Col>
                 </Row>
             </Form>
