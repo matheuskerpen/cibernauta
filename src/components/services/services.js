@@ -30,7 +30,7 @@ import "./services.css"
                     </AnchorLink>
                 </div>
                 <div className="service-card">
-                    <h4>Produto digital</h4>
+                    <h4>Produto digital - SaaS</h4>
                     <p>Possui uma ideia de negócio digital ou precisa desenvolver um software para sua empresa?</p>
                     <p>Nós te ajudamos a viabilizar esse projeto.</p>
                     <AnchorLink to="/#contact" title="">
@@ -69,7 +69,7 @@ import "./services.css"
                 <div className="service-card">
                     <h4>Consultoria</h4>
                     <p>Como podemos te ajudar?</p>
-                    <p>Compartilhamos nosso conhecimento e ajudamos na tomada de decisões estratégicas 
+                    <p>Compartilhamos nosso conhecimento, ajudamos na tomada de decisões estratégicas 
                         e desenvolvemos soluções de software específicas.</p>
                     <AnchorLink to="/#contact" title="">
                         <Button className="float-right" variant="outline-danger" style={{
